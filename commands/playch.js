@@ -89,21 +89,20 @@ module.exports = {
 
             await sock.sendMessage(channelId, {
                 text:
-                    `🎧 *${video.title}*\n` +
-                    `⏱️ Durasi: ${video.timestamp}\n` +
-                    `🧑‍🎤 ${video.author.name}\n` +
-                    `🔗 ${video.url}`,
+                    `⬩➤ *${video.title}*\n` +
+                    `> Durasi: ${video.timestamp}\n` +
+                    `> ${video.author.name}`,
                 contextInfo: {
                     mentionedJid: [senderJid],
                     isForwarded: true,
                     forwardingScore: 999,
                     forwardedNewsletterMessageInfo: {
                         newsletterJid: channelId,
-                        newsletterName: `Request by: ${pushName}`,
+                        newsletterName: `Post by : AmgPro`,
                         serverMessageId: -1,
                     },
                     externalAdReply: {
-                        title: "🎶 Music Request",
+                        title: "Powered by : JagPro & BotCahX",
                         body: video.title,
                         thumbnailUrl: video.image || ppUrl,
                         sourceUrl: video.url,
